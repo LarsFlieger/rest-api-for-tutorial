@@ -61,7 +61,7 @@ app.delete('/item/:id', (req, res) => {
     res.send('Item is deleted');
 });
 
-app.post('/item/:id', (req, res) => {
+app.patch('/item/:id', (req, res) => {
     const id = req.params.id;
     const newItem = req.body;
     newItem['id'] = id;
